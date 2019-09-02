@@ -1,9 +1,7 @@
-myApp.controller('LoginController', ['$http', '$location', 'UserService', 'SignupService', function ($http, $location, UserService, SignupService) {
+myApp.controller('LoginController', ['$http', '$location', 'SignupService', function ($http, $location, SignupService) {
   console.log('LoginController created');
   var self = this;
-  self.userService = UserService;
   self.signupService = SignupService;
-  self.id = UserService.userObject.id;
   self.disclaimer = SignupService.disclaimer;
 
  
