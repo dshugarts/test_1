@@ -1,9 +1,8 @@
-myApp.controller('GeneralController', ['$http', 'UserService', 'SignupService', '$location', 'SchoolService', function ($http, UserService, SignupService, $location, SchoolService) {
+myApp.controller('GeneralController', ['$http', 'UserService', 'SignupService', '$location', function ($http, UserService, SignupService, $location) {
   //  console.log('GeneralController created');
     var self = this;
     self.userService = UserService;
     self.signupService = SignupService;
-    self.schoolService = SchoolService;
     self.userObject = UserService.userObject;
     self.id = UserService.userObject.id;
     self.letPass = SignupService.letPass;
