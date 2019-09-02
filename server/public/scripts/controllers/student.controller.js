@@ -17,7 +17,7 @@ myApp.controller('StudentController', ['$http', 'UserService', '$location', 'Stu
   
 
 
-  self.studentHome = StudentService.studentHome;
+  
   self.studentCoach = StudentService.studentCoach;
   self.studentSchedule = StudentService.studentSchedule;
 
@@ -30,5 +30,9 @@ myApp.controller('StudentController', ['$http', 'UserService', '$location', 'Stu
   self.editBio = function () {
     self.editing = true;
   } 
+
+  self.studentHome = function() {
+    $location.path('/student_home');
+  }
 
 }]);

@@ -6,9 +6,9 @@
         <!-- Start md-sidenav -->
         <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
             <div class="starr-sidenav">
-                <img ng-src="./images/starrhealthlogo.png" />
-                <p class="starr-sidenav-text">Starr Health Co.</p>
-                <h1 class="lead">Welcome {{vm.userObject.userName}}!</h1>
+                <img ng-src="./images/fluid.png" />
+                <p class="starr-sidenav-text">Fluid Health and Fitness</p>
+                <h1 class="lead">Welcome Daniel!</h1>
             </div>
             <md-content layout-padding hide show-gt-md flex>
                 <md-button class="md-raised md-primary selectedBtn" flex ng-click="vm.studentHome()">
@@ -16,9 +16,19 @@
                     <span>Home Page</span>
                 </md-button>
                 <br />
-                <md-button class="md-raised md-primary" flex ng-click="vm.studentCoach()">
-                    <i class="material-icons person">person</i>
-                    <span>Your Coach</span>
+                <md-button class="md-raised md-primary" flex ng-click="vm.phaseOne()">
+                    <i class="material-icons looks_one">looks_one</i>
+                    <span>Phase 1</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.phaseTwo()">
+                    <i class="material-icons looks_two">looks_two</i>
+                    <span>Phase 2</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.phaseThree()">
+                    <i class="material-icons looks_3">looks_3</i>
+                    <span>Phase 3</span>
                 </md-button>
                 <br />
                 <md-button class="md-raised md-warn" flex ng-click="vm.userService.logout()">
@@ -32,10 +42,19 @@
                     <span>Home Page</span>
                 </md-button>
                 <br />
-
-                <md-button class="md-raised md-primary" flex ng-click="vm.studentCoach()">
-                    <i class="material-icons person">person</i>
-                    <span>Your Coach</span>
+                <md-button class="md-raised md-primary" flex ng-click="vm.phaseOne()">
+                    <i class="material-icons looks_one">looks_one</i>
+                    <span>Phase 1</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.phaseTwo()">
+                    <i class="material-icons looks_two">looks_two</i>
+                    <span>Phase 2</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.phaseThree()">
+                    <i class="material-icons looks_3">looks_3</i>
+                    <span>Phase 3</span>
                 </md-button>
                 <br />
                 <md-button class="md-raised md-warn" flex ng-click="vm.userService.logout()">
@@ -50,7 +69,7 @@
             <md-content class="element-content content-element-text md-padding" layout-xs="column" layout="row">
                 <div flex class="profile-div" layout="column" layout-align="center center">
                     <md-card class="card-element profile-card md-padding">
-                        <h2 class="home-title">Student Home</h2>
+                        <h2 class="home-title">Fluid Dashboard</h2>
                     </md-card>
                     <md-card class="card-element profile-card md-padding">
                         <md-card-title>
@@ -82,46 +101,6 @@
                 </div>
             </md-content>
             <!-- End Profile Card -->
-            <!-- Start Next Appointment Card -->
-            <md-content class="element-content content-element-text md-padding" layout-xs="column" layout="row" layout-align="center none">
-                <div flex class="profile-div" layout="column" layout-align="center center">
-                    <md-card class="card-element md-padding profile-card" layout="column" layout-align="center center">
-                        <h2 class="home-title">Your Next Appointment</h2>
-                    </md-card>
-                    <md-card class="card-element md-padding profile-card" layout="column" layout-align="center center">
-                        <md-card-content class="bio-text groove groove-1">
-                            <table class="table">
-                                <thead class="table-thead">
-                                    <tr class="table-tr">
-                                        <th class="table-th" scope="col">Date And Time</th>
-                                        <th class="table-th" scope="col">With Student</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="table-tr" ng-repeat="date in vm.appointment.list">
-                                        <td class="table-td" scope="row" data-label="Date and Time">{{date.date}} {{date.available_time}}</td>
-                                        <td class="table-td" scope="row" data-label="With Student">{{date.first_name}} {{date.last_name}}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <br/>
-                            <div>
-                                <md-button class="md-raised md-primary" flex ng-click="vm.studentSchedule()">
-                                    <i class="material-icons date-range">date_range</i>
-                                    <span>Make Appointment</span>
-                                </md-button>
-                            </div>
-                            <div>
-                                <md-button class="md-raised md-primary" flex ng-click="vm.myPastAppts()">
-                                    <i class="material-icons date-range">date_range</i>
-                                    <span>Past Appointments</span>
-                                </md-button>
-                            </div>
-                        </md-card-content>
-                    </md-card>
-                </div>
-            </md-content>
-            <!-- End Next Appointment Card -->
         </div>
 
     </section>
