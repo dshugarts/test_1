@@ -8,7 +8,6 @@ myApp.controller('GeneralController', ['$http', 'UserService', 'SignupService', 
     self.id = UserService.userObject.id;
     self.letPass = SignupService.letPass;
     self.disclaimer = SignupService.disclaimer;
-    self.collectGeneral = SignupService.collectGeneral;
     self.collectGoals = SignupService.collectGoals;
     self.general = SignupService.general;
     self.collectBarriers = SignupService.collectBarriers;
@@ -31,5 +30,12 @@ myApp.controller('GeneralController', ['$http', 'UserService', 'SignupService', 
         }
     }
 
+    self.home = function() {
+        $location.path('/home');
+    }
+
+    self.collectGeneral = function() {
+        $location.path('/student_home');
+    }
 
 }]);

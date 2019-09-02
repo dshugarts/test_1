@@ -5,8 +5,6 @@ myApp.controller('SignupController', ['UserService', '$location', 'SignupService
   self.signupService = SignupService;
   self.userObject = UserService.userObject;
   self.id = UserService.userObject.id;
-  self.disclaimer = SignupService.disclaimer;
-  self.collectGeneral = SignupService.collectGeneral;
   self.collectGoals = SignupService.collectGoals;
   self.general = SignupService.general;
   self.collectBarriers = SignupService.collectBarriers;
@@ -27,5 +25,7 @@ myApp.controller('SignupController', ['UserService', '$location', 'SignupService
         }
     }
 }
+
+
 
 }]);

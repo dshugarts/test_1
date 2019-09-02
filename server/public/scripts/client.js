@@ -194,164 +194,74 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
     .when('/coach_Home', {
       templateUrl: '/views/coach_views/coach_Home.html',
       controller: 'CoachController as vm',
-      resolve: {
-        getCoach: function (UserService) {
-          return UserService.getCoach();
-        }
-      }
     })
     .when('/coach_Schedule', {
       templateUrl: '/views/coach_views/coach_Schedule.html',
       controller: 'CoachController as vm',
-      resolve: {
-        getCoach: function (UserService) {
-          return UserService.getCoach();
-        }
-      }
     })
     .when('/student_Appointments', {
       templateUrl: '/views/student_views/student_Appointments.html',
       controller: 'StudentController as vm',
-      resolve: {
-        getCoach: function (UserService) {
-          return UserService.getStudent();
-        }
-      }
     })
       .when('/student_info', {
         templateUrl: '/views/coach_views/student_info.html',
         controller: 'CoachController as vm',
-        resolve: {
-          getCoach: function (UserService) {
-            return UserService.getCoach();
-          }
-        }
     }) //ScheduleController
     .when('/coach_Appointments', {
       templateUrl: '/views/coach_views/coach_Appointments.html',
       controller: 'CoachController as vm',
-      resolve: {
-        getCoach: function (UserService) {
-          return UserService.getCoach();
-        }
-      }
     })
     .when('/coach_Students', {
       templateUrl: '/views/coach_views/coach_Students.html',
       controller: 'CoachController as vm',
-      resolve: {
-        getCoach: function (UserService) {
-          return UserService.getCoach();
-        }
-      }
     })
     .when('/student_appointments', {
       templateUrl: '/views/student_views/student_appointments.html',
       controller: 'ScheduleController as vm',
-      resolve: {
-        getStudent: function (UserService) {
-          return UserService.getStudent();
-        }
-      }
     })
     .when('/disclaimer', {
       templateUrl: '/views/registration_views/disclaimer.html',
       controller: 'SignupController as vm',
-      resolve: {
-        getuser: function (UserService) {
-          return UserService.getuser();
-        }
-      }
     })
     .when('/general_info', {
       templateUrl: '/views/registration_views/general_info.html',
       controller: 'GeneralController as vm',
-      resolve: {
-        getuser: function (UserService) {
-          return UserService.getuser();
-        }
-      }
     })
     .when('/student_goals', {
       templateUrl: '/views/registration_views/student_goals.html',
       controller: 'SignupController as vm',
-      resolve: {
-        getuser: function (UserService) {
-          return UserService.getuser();
-        }
-      }
     })
     .when('/student_barriers', {
       templateUrl: '/views/registration_views/student_barriers.html',
       controller: 'SignupController as vm',
-      resolve: {
-        getuser: function (UserService) {
-          return UserService.getuser();
-        }
-      }
     })
     .when('/additional_info', {
       templateUrl: '/views/registration_views/additional_info.html',
       controller: 'SignupController as vm',
-      resolve: {
-        getuser: function (UserService) {
-          return UserService.getuser();
-        }
-      }
     })
     .when('/student_coaches', {
       templateUrl: '/views/student_views/student_coaches.html',
       controller: 'MatchController as vm',
-      resolve: {
-        getuser: function (UserService) {
-          return UserService.getuser();
-        }
-      }
     })
     .when('/student_home', {
       templateUrl: '/views/student_views/student_home.html',
       controller: 'StudentController as vm',
-      resolve: {
-        getStudent: function (UserService) {
-          return UserService.getStudent();
-        }
-      }
     })
     .when('/student_coach', {
       templateUrl: '/views/student_views/student_coach.html',
       controller: 'MatchController as vm',
-      resolve: {
-        getuser: function (UserService) {
-          return UserService.getuser();
-        }
-      }
     })
     .when('/past_appointments', {
       templateUrl: '/views/student_views/past_appointments.html',
       controller: 'ApptController as vm',
-      resolve: {
-        getStudent: function (UserService) {
-          return UserService.getStudent();
-        }
-      }
     })
     .when('/match_coach', {
       templateUrl: '/views/student_views/match_coach.html',
       controller: 'MatchController as vm',
-      resolve: {
-        getuser: function (UserService) {
-          return UserService.getuser();
-        }
-      }
     })
     .when('/change_password', {
       templateUrl: '/views/student_views/change_password.html',
       controller: 'StudentController as vm',
-      resolve: {
-        getuser: function (UserService) {
-          return UserService.getuser();
-        }
-      }
     })
     .otherwise({
       template: '<h1>404</h1>'

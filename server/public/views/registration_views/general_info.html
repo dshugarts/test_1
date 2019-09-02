@@ -7,68 +7,85 @@
             </div>
         </div>
         <div layout-padding class="starr-landing">
-            <img ng-src="./images/starrhealthlogo.png" />
-            <p class="home-page-text">Starr Health Co.</p>
+            <img ng-src="./images/fluid.png" />
+            <p class="home-page-text">Fluid Health and Fitness</p>
         </div>
-        <h2 class="general-title">General Info</h2>
+        <h2 class="general-title">Personal Information</h2>
         <div layout-align="center center">
             <md-input-container flex>
                 <label class="text-label" for="firstName">First Name:</label>
-                <input class="text-label" type="text" name="firstName" ng-model="vm.generalStudent.first_name">
+                <input class="text-label" type="text" name="firstName"/>
             </md-input-container>
             <md-input-container flex>
                 <label class="text-label" for="lastName">Last Name:</label>
-                <input class="text-label" type="text" name="lastName" ng-model="vm.generalStudent.last_name" />
+                <input class="text-label" type="text" name="lastName"/>
             </md-input-container>
         </div>
         <br />
         <div layout-align="center center">
             <md-input-container flex>
-                <label class="text-label" for="relationship">Relationship Status:</label>
-                <input class="text-label" type="text" name="relationship" ng-model="vm.generalStudent.relationship_status" />
+                <label class="text-label" for="height">Height (in.):</label>
+                <input class="text-label" type="text" name="height"/>
             </md-input-container>
             <md-input-container flex>
-                <label class="text-label" for="email">Email:</label>
-                <input class="text-label" type="email" name="emaIl" ng-model="vm.generalStudent.email" />
+                <label class="text-label" for="weight">Weight (lbs.):</label>
+                <input class="text-label" type="text" name="weight"/>
             </md-input-container>
         </div>
         <br />
         <div layout-align="center center">
             <md-container flex>
-                <label class="text-label">Date of Birth</label>
+                <label class="text-label">Date of Birth:</label>
                 <br>
                 <md-datepicker class="date-picker" ng-model="vm.generalStudent.date_of_birth"></md-datepicker>
             </md-container>
         </div>
         <br />
+
+        <label class="label-items">Gender:</label>
+        </br>
+        <div layout-align="center center">
+            <md-radio-group layout="row" layout-align="center center" ng-model="vm.info.other_bool">
+                <md-radio-button class="label-items radio-value" value="M">Male</md-radio-button>
+                <md-radio-button class="label-items radio-value" value="F">Female</md-radio-button>
+            </md-radio-group>
+        </div>
+        <br />
         <div layout-align="center center">
             <md-input-container flex>
-                <label class="text-label" for="phone">Phone Number:</label>
-                <input class="text-label" type="text" name="phone" ng-model="vm.generalStudent.phone_number" />
+                <label class="text-label" for="">Phone Number:</label>
+                <input class="text-label" type="text" name="phone"/>
             </md-input-container>
             <md-input-container flex>
-                <label class="text-label" for="skype">Skype ID:</label>
-                <input class="text-label" type="text" name="skype" ng-model="vm.generalStudent.skype" />
+                <label class="text-label" for="email">Email:</label>
+                <input class="text-label" type="email" name="email"/>
             </md-input-container>
         </div>
         <br />
-        <div layout-align="center" flex>
-            <md-container flex>
-                <md-select class="text-label select-element" for="school" name="school" placeholder="Name of School:" ng-model="vm.generalStudent.school_id">
-                    <md-option class="text-label select-element" ng-repeat="school in vm.schools.list" value="{{school.school_id}}">
-                        <p>{{school.school_name}}</p>
-                    </md-option>
-                </md-select>
-            </md-container>
+        <h2 class="general-title">Safety Information</h2>
+        <label class="terms-title">I have agreed to the Terms and Conditions</label>
+        <div layout-align="center center">
             <md-input-container flex>
-                <label class="text-label" for="code">School Code:</label>
-                <input class="text-label" type="text" for="code" name="code" ng-model="vm.generalStudent.school_code" />
+                <md-checkbox layout="column" class="terms-text" aria-label="agree">
+                    Agree
+                </md-checkbox>
             </md-input-container>
         </div>
-        <br />
+    </br>
+    <h2 class="general-title">Create Password</h2>
+    <div layout-align="center center">
+        <md-input-container flex>
+            <label class="text-label" for="passwordOne">Create a Password:</label>
+            <input class="text-label" type="password" name="passwordOne"/>
+        </md-input-container>
+        <md-input-container flex>
+            <label class="text-label" for="passwordTwo">Confirm Password:</label>
+            <input class="text-label" type="passwordTwo" name="passwordTwo"/>
+        </md-input-container>
+    </div>
         <md-container>
-            <md-button class="md-raised md-primary defaultBtn" ng-click="vm.disclaimer()">Back</md-button>
-            <md-button class="md-raised md-primary defaultBtn" ng-click="vm.collectGeneral(vm.generalStudent)">Next</md-button>
+            <md-button class="md-raised md-primary defaultBtn" ng-click="vm.home()">Back</md-button>
+            <md-button class="md-raised md-primary defaultBtn" ng-click="vm.collectGeneral()">Next</md-button>
         </md-container>
     </md-card>
 
