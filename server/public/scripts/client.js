@@ -77,7 +77,7 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
     })
     .when('/phase_one', {
       templateUrl: '/views/student_views/phase_one.html',
-      controller: 'StudentController as vm',
+      controller: 'GaugeController as vm',
     })
     .when('/phase_two', {
       templateUrl: '/views/student_views/phase_two.html',

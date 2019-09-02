@@ -54,7 +54,7 @@ myApp.controller('GaugeController', ['$location', 'UserService', function($locat
           bottomwidth: 8,
           color: 'black',
         },
-        gaugeWidthScale: 0.5,
+        gaugeWidthScale: 1.0,
         title: "Phase 1 Training",
         label: "LEVEL 3 COMPLETE"
       });

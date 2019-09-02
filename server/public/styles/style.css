@@ -775,3 +775,19 @@ li a {
       background: white; }
   .tabsdemoDynamicHeight md-content h1:first-child {
     margin-top: 0; }
+
+    .gauge {
+      display: block;
+      float: left;
+     
+      margin: 0 0 1% 0;
+  }
+  .size-1 {
+      width: 20%;
+  }
+  .size-2 {
+      width: 30%;
+  }
+  .size-3 {
+      width: 30%;
+  }
