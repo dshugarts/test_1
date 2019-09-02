@@ -75,6 +75,18 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
       templateUrl: '/views/student_views/change_password.html',
       controller: 'StudentController as vm',
     })
+    .when('/phase_one', {
+      templateUrl: '/views/student_views/phase_one.html',
+      controller: 'StudentController as vm',
+    })
+    .when('/phase_two', {
+      templateUrl: '/views/student_views/phase_two.html',
+      controller: 'StudentController as vm',
+    })
+    .when('/phase_three', {
+      templateUrl: '/views/student_views/phase_three.html',
+      controller: 'StudentController as vm',
+    })
     .otherwise({
       template: '<h1>404</h1>'
     });

@@ -17,8 +17,18 @@ myApp.controller('StudentController', ['$http', 'UserService', '$location', 'Stu
   
 
 
+  self.phaseOne = function() {
+    $location.path('/phase_one');
+  }
+
+  self.phaseTwo = function() {
+    $location.path('/phase_two');
+  }
+
+  self.phaseThree = function() {
+    $location.path('/phase_three');
+  }
   
-  self.studentCoach = StudentService.studentCoach;
   self.studentSchedule = StudentService.studentSchedule;
 
   StudentService.getStudent();

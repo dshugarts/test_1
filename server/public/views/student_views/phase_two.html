@@ -1,0 +1,100 @@
+<header class="ng-cloak" hide-gt-md ng-include="'/views/partials/header.html'"></header>
+
+<div class="ng-cloak" layout="column" layout-fill>
+
+        <section layout="row" flex>
+                <!-- Start md-sidenav -->
+                <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
+                    <div class="starr-sidenav">
+                        <img ng-src="./images/fluid.png" />
+                        <p class="starr-sidenav-text">Fluid Health and Fitness</p>
+                        <h1 class="lead">Welcome Daniel!</h1>
+                    </div>
+                    <md-content layout-padding hide show-gt-md flex>
+                        <md-button class="md-raised md-primary selectedBtn" flex ng-click="vm.studentHome()">
+                            <i class="material-icons home">home</i>
+                            <span>Home Page</span>
+                        </md-button>
+                        <br />
+                        <md-button class="md-raised md-primary" flex ng-click="vm.phaseOne()">
+                            <i class="material-icons looks_one">looks_one</i>
+                            <span>Phase 1</span>
+                        </md-button>
+                        <br />
+                        <md-button class="md-raised md-primary" flex ng-click="vm.phaseTwo()">
+                            <i class="material-icons looks_two">looks_two</i>
+                            <span>Phase 2</span>
+                        </md-button>
+                        <br />
+                        <md-button class="md-raised md-primary" flex ng-click="vm.phaseThree()">
+                            <i class="material-icons looks_3">looks_3</i>
+                            <span>Phase 3</span>
+                        </md-button>
+                        <br />
+                        <md-button class="md-raised md-warn" flex ng-click="vm.userService.logout()">
+                            <i class="material-icons exit-app">exit_to_app</i>
+                            <span>Log Out</span>
+                        </md-button>
+                    </md-content>
+                    <md-content layout-padding hide-gt-md flex>
+                        <md-button class="md-raised md-primary selectedBtn" flex ng-click="vm.studentHome()">
+                            <i class="material-icons home">home</i>
+                            <span>Home Page</span>
+                        </md-button>
+                        <br />
+                        <md-button class="md-raised md-primary" flex ng-click="vm.phaseOne()">
+                            <i class="material-icons looks_one">looks_one</i>
+                            <span>Phase 1</span>
+                        </md-button>
+                        <br />
+                        <md-button class="md-raised md-primary" flex ng-click="vm.phaseTwo()">
+                            <i class="material-icons looks_two">looks_two</i>
+                            <span>Phase 2</span>
+                        </md-button>
+                        <br />
+                        <md-button class="md-raised md-primary" flex ng-click="vm.phaseThree()">
+                            <i class="material-icons looks_3">looks_3</i>
+                            <span>Phase 3</span>
+                        </md-button>
+                        <br />
+                        <md-button class="md-raised md-warn" flex ng-click="vm.userService.logout()">
+                            <i class="material-icons exit-app">exit_to_app</i>
+                            <span>Log Out</span>
+                        </md-button>
+                    </md-content>
+                </md-sidenav>
+                <!-- End md-sidenav -->
+    <md-content class="element-content content-element-text md-padding" layout-xs="column" layout="row">
+        <div flex class="profile-div" layout="column" layout-align="center center">
+        <md-card class="card-element profile-card md-padding">
+        <h2 class="home-title">Phase 2 Training</h2>
+        </md-card>
+     
+    <md-content>
+      <md-tabs md-dynamic-height md-border-bottom>
+        <md-tab label="Level 1">
+          <md-content class="md-padding">
+            <h1 class="md-display-2">Level 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+          </md-content>
+        </md-tab>
+        <md-tab label="Level 2">
+          <md-content class="md-padding">
+            <h1 class="md-display-2">Level 2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
+            <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis. Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
+            <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+          </md-content>
+        </md-tab>
+        <md-tab label="Level 3">
+          <md-content class="md-padding">
+            <h1 class="md-display-2">Level 3</h1>
+            <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+          </md-content>
+        </md-tab>
+      </md-tabs>
+    </md-content>
+</div>
+</md-content>
+    </section>
+  </div>
