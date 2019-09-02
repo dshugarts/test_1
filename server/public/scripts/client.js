@@ -87,6 +87,10 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
       templateUrl: '/views/student_views/phase_three.html',
       controller: 'StudentController as vm',
     })
+    .when('/new', {
+      templateUrl: '/views/student_views/new.html',
+      controller: 'GaugeController as vm',
+    })
     .otherwise({
       template: '<h1>404</h1>'
     });

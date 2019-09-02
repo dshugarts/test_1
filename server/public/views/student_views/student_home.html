@@ -101,6 +101,46 @@
                 </div>
             </md-content>
             <!-- End Profile Card -->
+            <!-- Start Next Appointment Card -->
+            <md-content class="element-content content-element-text md-padding" layout-xs="column" layout="row" layout-align="center none">
+                <div flex class="profile-div" layout="column" layout-align="center center">
+                    <md-card class="card-element md-padding profile-card" layout="column" layout-align="center center">
+                        <h2 class="home-title">Your Next Appointment</h2>
+                    </md-card>
+                    <md-card class="card-element md-padding profile-card" layout="column" layout-align="center center">
+                        <md-card-content class="bio-text groove groove-1">
+                            <table class="table">
+                                <thead class="table-thead">
+                                    <tr class="table-tr">
+                                        <th class="table-th" scope="col">Date And Time</th>
+                                        <th class="table-th" scope="col">With Student</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-tr" ng-repeat="date in vm.appointment.list">
+                                        <td class="table-td" scope="row" data-label="Date and Time">{{date.date}} {{date.available_time}}</td>
+                                        <td class="table-td" scope="row" data-label="With Student">{{date.first_name}} {{date.last_name}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br/>
+                            <div>
+                                <md-button class="md-raised md-primary" flex ng-click="vm.studentSchedule()">
+                                    <i class="material-icons date-range">date_range</i>
+                                    <span>Make Appointment</span>
+                                </md-button>
+                            </div>
+                            <div>
+                                <md-button class="md-raised md-primary" flex ng-click="vm.myPastAppts()">
+                                    <i class="material-icons date-range">date_range</i>
+                                    <span>Past Appointments</span>
+                                </md-button>
+                            </div>
+                        </md-card-content>
+                    </md-card>
+                </div>
+            </md-content>
+            <!-- End Next Appointment Card -->
         </div>
 
     </section>

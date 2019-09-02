@@ -28,10 +28,6 @@ myApp.controller('StudentController', ['$http', 'UserService', '$location', 'Stu
   self.phaseThree = function() {
     $location.path('/phase_three');
   }
-  
-  self.studentSchedule = StudentService.studentSchedule;
-
-  StudentService.getStudent();
 
   self.cancelBio = function () {
     self.editing = false;
@@ -44,5 +40,7 @@ myApp.controller('StudentController', ['$http', 'UserService', '$location', 'Stu
   self.studentHome = function() {
     $location.path('/student_home');
   }
+
+
 
 }]);

@@ -26,6 +26,4 @@ myApp.controller('SignupController', ['UserService', '$location', 'SignupService
     }
 }
 
-
-
 }]);
