@@ -1,0 +1,196 @@
+<header class="ng-cloak" hide-gt-md ng-include="'/views/partials/header.html'"></header>
+
+<div class="ng-cloak" layout="column" layout-fill>
+
+    <section layout="row" flex>
+        <!-- Start md-sidenav -->
+        <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
+            <div class="starr-sidenav">
+                <img ng-src="./images/starrhealthlogo.png" />
+                <p class="starr-sidenav-text">Starr Health Co.</p>
+                <h1 class="lead">Welcome {{vm.userObject.userName}}!</h1>
+            </div>
+            <md-content layout-padding hide show-gt-md flex>
+                <md-button class="md-raised md-primary" flex ng-click="vm.superAdminHome()">
+                    <i class="material-icons home">home</i>
+                    <span>Home Page</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary selectedBtn" flex ng-click="vm.superAdminCreateCoach()">
+                    <i class="material-icons note-add">note_add</i>
+                    <span>Admin - Add Coach</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.superAdminNewSchool()">
+                    <i class="material-icons note-add">note_add</i>
+                    <span>Admin - Add School</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.superAdminStudentDirectory()">
+                    <i class="material-icons list">list</i>
+                    <span>Admin - Student Directory</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.superCoachDirectory()">
+                    <i class="material-icons list">list</i>
+                    <span>Admin - Coach Directory</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.superAdminSchoolDirectory()">
+                    <i class="material-icons list">list</i>
+                    <span>Admin - School Directory</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.superAdminAllAppointments()">
+                    <i class="material-icons date-range">date_range</i>
+                    <span>Admin - All Appointments</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.superAdminCoachSchedule()">
+                    <i class="material-icons date-range">date_range</i>
+                    <span>Coach - Schedule</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.superAdminCoachAllAppointments()">
+                    <i class="material-icons date-range">date_range</i>
+                    <span>Coach - All Appointments</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-warn" flex ng-click="vm.userService.logout()">
+                    <i class="material-icons exit-app">exit_to_app</i>
+                    <span>Log Out</span>
+                </md-button>
+            </md-content>
+            <md-content layout-padding hide-gt-md flex>
+                <md-button class="md-raised md-primary" flex ng-click="vm.superAdminHome()">
+                    <i class="material-icons home">home</i>
+                    <span>Home Page</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary selectedBtn" flex ng-click="vm.superAdminCreateCoach()">
+                    <i class="material-icons note-add">note_add</i>
+                    <span>Admin - Add Coach</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.superAdminNewSchool()">
+                    <i class="material-icons note-add">note_add</i>
+                    <span>Admin - Add School</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.superAdminStudentDirectory()">
+                    <i class="material-icons list">list</i>
+                    <span>Admin - Student Directory</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.superCoachDirectory()">
+                    <i class="material-icons list">list</i>
+                    <span>Admin - Coach Directory</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.superAdminSchoolDirectory()">
+                    <i class="material-icons list">list</i>
+                    <span>Admin - School Directory</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.superAdminAllAppointments()">
+                    <i class="material-icons date-range">date_range</i>
+                    <span>Admin - All Appointments</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.superAdminCoachSchedule()">
+                    <i class="material-icons date-range">date_range</i>
+                    <span>Coach - Schedule</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.superAdminCoachAllAppointments()">
+                    <i class="material-icons date-range">date_range</i>
+                    <span>Coach - All Appointments</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-warn" flex ng-click="vm.userService.logout()">
+                    <i class="material-icons exit-app">exit_to_app</i>
+                    <span>Log Out</span>
+                </md-button>
+            </md-content>
+        </md-sidenav>
+        <!-- Start md-sidenav -->
+        <div class="overflow-1" flex layout="row" layout-align="center center">
+            <!-- Start Add New Coach -->
+            <md-content flex class="content-element content-element-text" layout="column" layout-align="center center" ng-controller="AddCoachController as ac">
+                <div flex class="div-element" layout="column" layout-align="center center">
+                    <md-card flex class="card-element md-padding" layout="column" layout-align="center center">
+                        <h2 class="create-coach-title">Add Coach</h2>
+                    </md-card>
+                    <md-card flex class="card-element md-padding" layout="column" layout-align="center center">
+                        <div layout-gt-sm="row">
+                            <md-input-container flex>
+                                <label class="blackLabel" for="firstName">First Name:</label>
+                                <input type="text" name="firstName" ng-model="ac.coachInfo.first_name">
+                            </md-input-container>
+                            <md-input-container flex>
+                                <label class="blackLabel" for="lastName">Last Name:</label>
+                                <input type="text" name="lastName" ng-model="ac.coachInfo.last_name">
+                            </md-input-container>
+                        </div>
+                        <div layout-gt-sm="row">
+                            <md-input-container flex>
+                                <label class="blackLabel" for="userName">Coach Username:</label>
+                                <input type="text" name="userName" ng-model="ac.coachInfo.username">
+                            </md-input-container>
+                            <md-input-container flex>
+                                <label class="blackLabel" for="email">Email:</label>
+                                <input type="email" name="email" ng-model="ac.coachInfo.email" />
+                            </md-input-container>
+                        </div>
+                        <div layout-gt-sm="row">
+                            <md-input-container flex>
+                                <label class="blackLabel" for="passwordOne">Password:</label>
+                                <input type="password" ng-model="ac.coachInfo.passwordOne">
+                            </md-input-container>
+                            <md-input-container flex>
+                                <label class="blackLabel" for="passwordTwo">Confirm Password:</label>
+                                <input type="password" ng-model="ac.coachInfo.passwordTwo">
+                            </md-input-container>
+                        </div>
+                        <div layout="row">
+                            <md-input-container class="select-element md-block">
+                                <md-select flex placeholder="Job Title:" name="jobTitle" ng-model="ac.coachInfo.job_title">
+                                    <md-option class="text-label select-element" ng-repeat="job in ac.jobs.list" value="{{job.job_title}}">
+                                        {{job.job_title}}
+                                    </md-option>
+                                </md-select>
+                            </md-input-container>
+                        </div>
+                        <div layout="row">
+                            <md-input-container class="select-element md-block">
+                                <md-select flex multiple placeholder="Specialty:" name="specialty" ng-model="ac.coachInfo.specialty">
+                                    <md-option class="text-label select-element" ng-repeat="specialty in ac.specialties.list" value="{{specialty.specialty_id}}">
+                                        {{specialty.specialty_name}}
+                                    </md-option>
+                                </md-select>
+                            </md-input-container>
+                        </div>
+                        <div layout-gt-sm="row">
+                            <md-input-container flex>
+                                <label class="blackLabel" for="interests">Personal Interests:</label>
+                                <input type="text" name="interests" ng-model="ac.coachInfo.interests">
+                            </md-input-container>
+                        </div>
+                        <div layout-align="center center">
+                            <md-input-container flex>
+                                <label class="text-label" for="phone">Phone Number:</label>
+                                <input class="text-label" type="text" name="phone" ng-model="ac.coachInfo.coach_phone" />
+                            </md-input-container>
+                        </div>
+                        <md-container>
+                            <md-button class="md-raised md-primary defaultBtn" ng-click="ac.addCoach(ac.coachInfo)">Add Coach</md-button>
+                        </md-container>
+                    </md-card>
+                </div>
+            </md-content>
+            <!-- End Add New Coach -->
+        </div>
+
+    </section>
+
+</div>

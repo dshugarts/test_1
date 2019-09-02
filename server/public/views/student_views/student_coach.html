@@ -1,0 +1,93 @@
+<header class="ng-cloak" hide-gt-md ng-include="'/views/partials/header.html'"></header>
+
+<div class="ng-cloak" layout="column" layout-fill>
+
+    <section layout="row" flex>
+        <!-- Start md-sidenav -->
+        <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
+            <div class="starr-sidenav">
+                <img ng-src="./images/starrhealthlogo.png" />
+                <p class="starr-sidenav-text">Starr Health Co.</p>
+                <h1 class="lead">Welcome {{vm.userObject.userName}}!</h1>
+            </div>
+            <md-content layout-padding hide show-gt-md flex>
+                <md-button class="md-raised md-primary selectedBtn" flex ng-click="vm.studentHome()">
+                    <i class="material-icons home">home</i>
+                    <span>Home Page</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.viewMyCoach()">
+                    <i class="material-icons person">person</i>
+                    <span>Your Coach</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-warn" flex ng-click="vm.userService.logout()">
+                    <i class="material-icons exit-app">exit_to_app</i>
+                    <span>Log Out</span>
+                </md-button>
+            </md-content>
+            <md-content layout-padding hide-gt-md flex>
+                <md-button class="md-raised md-primary selectedBtn" flex ng-click="vm.studentHome()">
+                    <i class="material-icons home">home</i>
+                    <span>Home Page</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.viewMyCoach()">
+                    <i class="material-icons person">person</i>
+                    <span>Your Coach</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-warn" flex ng-click="vm.userService.logout()">
+                    <i class="material-icons exit-app">exit_to_app</i>
+                    <span>Log Out</span>
+                </md-button>
+            </md-content>
+        </md-sidenav>
+        <!-- End md-sidenav -->
+        <div class="overflow-1" flex layout="row" layout-align="center center">
+            <!-- Start Your Coach Card -->
+            <md-content flex class="content-element content-element-text" layout="column" layout-align="center center" ng-controller="NewController as vm">
+                <div flex class="div-element" layout="column" layout-align="center center">
+                    <md-card flex class="card-element md-padding" layout="column" layout-align="center center">
+                        <h2 class="home-title">Your Coach</h2>
+                    </md-card>
+                    <md-card flex class="card-element md-padding" layout="column" layout-align="center center">
+                        <table class="table" ng-repeat="coach in vm.myCoach.list">
+                            <thead class="table-thead">
+                                <tr class="table-tr">
+                                    <th class="table-th" scope="col">Photo</th>
+                                    <th class="table-th" scope="col">First Name</th>
+                                    <th class="table-th" scope="col">Last Name</th>
+                                    <th class="table-th" scope="col">Job Title</th>
+                                    <th class="table-th" scope="col">Certifications</th>
+                                    <th class="table-th" scope="col">Biography</th>
+                                </tr>
+                            </thead>
+                            <tbody ng-repeat="coach in vm.myCoach.list">
+                                <tr class="table-tr">
+                                    <td class="table-td" scope="row" data-label="Photo">
+                                        <img ng-src="{{coach.coach_photo}}" width="180px" />
+                                    </td>
+                                    <td class="table-td" scope="row" data-label="First Name">{{coach.first_name}}</td>
+                                    <td class="table-td" scope="row" data-label="Last Name">{{coach.last_name}}</td>
+                                    <td class="table-td" scope="row" data-label="Job Title">{{coach.job_title}}</td>
+                                    <td class="table-td" scope="row" data-label="Certifications">{{coach.certifications}}</td>
+                                    <td class="table-td" scope="row" data-label="Biography">{{coach.coach_bio}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <md-input-container class="md-padding" ng-repeat="coach in vm.myCoach.list">
+                            <label class="text-label" for="message">Message:</label>
+                            <input class="text-label" type="text" name="message" ng-model="vm.message" />
+                            <md-button class="md-raised md-primary defaultBtn" ng-click="vm.late(coach.coach_id, vm.message)">Send Message to Coach</md-button>
+                        </md-input-container>
+                    </md-card>
+                </div>
+            </md-content>
+            <!-- End Your Coach Card -->
+        </div>
+
+    </section>
+
+</div>
