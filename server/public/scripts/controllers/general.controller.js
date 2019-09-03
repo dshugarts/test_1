@@ -59,7 +59,7 @@ myApp.controller('GeneralController', ['$http', 'UserService', 'SignupService', 
             imageAlt: 'Custom image',
             animation: false
           })
-        $location.path('/student_home');
+        $location.path('/dashboard');
     }
 
 }]);

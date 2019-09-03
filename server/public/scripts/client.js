@@ -107,8 +107,8 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
       templateUrl: '/views/registration_views/contact_info.html',
       controller: 'GeneralController as vm',
     })
-    .when('/student_home', {
-      templateUrl: '/views/student_views/student_home.html',
+    .when('/dashboard', {
+      templateUrl: '/views/student_views/dashboard.html',
       controller: 'GaugeController as vm',
     })
     .when('/change_password', {

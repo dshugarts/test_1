@@ -180,7 +180,7 @@ myApp.controller('GaugeController', ['$location', 'UserService', function($locat
       } 
     
       self.studentHome = function() {
-        $location.path('/student_home');
+        $location.path('/dashboard');
       }
   
   }]);

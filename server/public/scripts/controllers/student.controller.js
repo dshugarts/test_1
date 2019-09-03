@@ -38,7 +38,7 @@ myApp.controller('StudentController', ['$http', 'UserService', '$location', 'Stu
   } 
 
   self.studentHome = function() {
-    $location.path('/student_home');
+    $location.path('/dashboard');
   }
 
 
