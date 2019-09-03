@@ -1,0 +1,34 @@
+<header class="ng-cloak">
+    <div class="md-toolbar-tools" ng-controller="SideNav">
+      <md-button ng-click="toggleLeft()" class="md-icon-button md-primary hide-gt-md">
+        <i class="material-icons menu">menu</i>
+      </md-button>
+      <div class="hide-gt-md starr-header">
+        <img ng-src="./images/fluid.png" class="starr-logo-header" />
+        <span class="starr-text-header">Fluid Health and Fitness</span>
+      </div>
+      <span flex></span>
+      <div class="md-menu-demo" ng-controller="BasicDemoCtrl as ctrl" ng-cloak>
+        <md-menu>
+            <md-button aria-label="Open phone interactions menu" class="md-icon-button" ng-click="ctrl.openMenu($mdMenu, $event)">
+                <i class="material-icons" id="account_circle">account_circle</i>
+            </md-button>
+            <md-menu-content width="4">
+              <md-menu-item>
+                <md-button ng-click="ctrl.redial($event)">
+                    <i class="material-icons person">person</i>
+                  Account Settings
+                </md-button>
+              </md-menu-item>
+              <md-menu-divider></md-menu-divider>
+              <md-menu-item>
+                <md-button ng-click="ctrl.toggleNotifications()">
+                    <i class="material-icons" id="lock">lock</i>
+                  Logout
+                </md-button>
+              </md-menu-item>
+            </md-menu-content>
+          </md-menu>
+    </div>
+    </div>
+  </header>

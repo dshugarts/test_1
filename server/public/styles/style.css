@@ -57,8 +57,8 @@ main {
 }
 
 header {
-  background-color: #1686B4;
-  color: #FFF;
+  background-color: #FFF;
+  color: #1686B4;
 }
 
 .starr-sidenav {
@@ -69,7 +69,7 @@ header {
 }
 
 .menu {
-  color: #FFF;
+  color: #1686B4;
 }
 
 .starr-sidenav-text {
@@ -796,4 +796,12 @@ li a {
 
 #red-x {
   color: red;
+}
+
+#account_circle {
+  color: #1686B4;
+}
+
+#lock{
+  color: gold;
 }
