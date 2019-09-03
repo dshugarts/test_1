@@ -2,7 +2,7 @@
 
 <div class="ng-cloak" layout="column" layout-fill>
 
-    <section layout="row" flex>
+    <section layout="row">
         <!-- Start md-sidenav -->
         <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
             <div class="starr-sidenav">
@@ -76,15 +76,81 @@
 
             <md-content class="element-content content-element-text md-padding" layout-md="column" layout="row">
                     <div flex class="profile-div" layout-align="center center">
-                    <md-card class="card-element profile-card md-padding" ng-click="vm.roadMap()">
+                    <md-card class="card-element profile-card md-padding">
                                 <div class="ng-cloak">
                                     <div class="container">
                                     <div id="gaugeOne" class="gauge size-1">
                                     </div>
                                     <div>
                                     <h3>Fluid Health Score</h3>
-                                    <p>copy copy copy</p>
+                                    <p>This is currently based upon total progress within Core|6 Training Model</p>
                                     </div>
+                        </div>
+                    </md-card>
+                </br>
+                <md-card id="dash_phase_one" ng-click=vm.phaseOne()>
+                        <div>
+                            <div id="gaugeTwo" class=" gauge size-1">
+                            </div>
+                            <h3>Phase 1 Training</h3>
+                            <ul flex class="profile-div" layout="column" layout-align="center center" type="none">
+                                    <li>
+                                        <i class="material-icons" id="gold-star">grade</i> 
+                                        Level 1                               
+                                    </li>
+                                    <li>
+                                        <i class="material-icons" id="gold-star">grade</i> 
+                                        Level 2                              
+                                    </li>
+                                    <li>
+                                        <i class="material-icons" id="gold-star">grade</i> 
+                                        Level 3                               
+                                    </li>
+                                </ul>
+                        </div>
+                    </md-card>
+                </br>
+                <md-card id="dash_phase_two" ng-click=vm.phaseTwo()>
+                        <div>
+                            <div id="gaugeThree" class=" gauge size-1">
+                            </div>
+                            <h3>Phase 2 Training</h3>
+                            <ul flex class="profile-div" layout="column" layout-align="center center" type="none">
+                                    <li>
+                                        <i class="material-icons" id="gold-star">grade</i> 
+                                        Level 1                               
+                                    </li>
+                                    <li>
+                                        <i class="material-icons" id="gold-star">grade</i> 
+                                        Level 2                              
+                                    </li>
+                                    <li>
+                                        <i class="material-icons" id="red-x">clear</i> 
+                                        Level 3                               
+                                    </li>
+                                </ul>
+                        </div>
+                    </md-card>
+                </br>
+                <md-card id="dash_phase_three" ng-click=vm.phaseThree()>
+                        <div>
+                            <div id="gaugeFour" class=" gauge size-1">
+                            </div>
+                            <h3>Phase 3 Training</h3>
+                            <ul flex class="profile-div" layout="column" layout-align="center center" type="none">
+                                    <li>
+                                        <i class="material-icons" id="red-x">clear</i> 
+                                        Level 1                               
+                                    </li>
+                                    <li>
+                                        <i class="material-icons" id="red-x">clear</i> 
+                                        Level 2                              
+                                    </li>
+                                    <li>
+                                        <i class="material-icons" id="red-x">clear</i> 
+                                        Level 3                               
+                                    </li>
+                                </ul>
                         </div>
                     </md-card>
                 </div>

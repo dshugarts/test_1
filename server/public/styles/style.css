@@ -63,8 +63,8 @@ header {
 
 .starr-sidenav {
   text-align: center;
-  color: #FFF;
-  background-color: rgba(0, 0, 0, 0.3);
+  color: #1686B4;
+  background-color: #FFF(0, 0, 0, 0.3);
   padding: 8px 4px 4px 4px;
 }
 
@@ -75,7 +75,7 @@ header {
 .starr-sidenav-text {
   text-align: center;
   font-size: 35px;
-  color: #FFF;
+  color: #1686B4;
   font-weight: bold;
   margin: 10px 0 10px 0;
 }
@@ -170,7 +170,7 @@ md-sidenav.md-default-theme,
 md-sidenav,
 md-sidenav.md-default-theme md-content,
 md-sidenav md-content {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #FFF;
   text-align: center;
   height: 100%;
 }
@@ -803,5 +803,20 @@ li a {
 }
 
 #lock{
-  color: gold;
+  color: crimson;
+}
+
+#dash_phase_one {
+  width: 75%;
+  float: right;
+}
+
+#dash_phase_two {
+  width: 75%;
+  float: right;
+}
+
+#dash_phase_three {
+  width: 75%;
+  float: right;
 }

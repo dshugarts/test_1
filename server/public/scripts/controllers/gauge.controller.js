@@ -99,6 +99,64 @@ myApp.controller('GaugeController', ['$location', 'UserService', function($locat
         title: "Phase 3 Training",
         label: "LOCKED"
       });
+
+      var g = new JustGage({
+        id: "gaugeTwoAgain",
+        value: 100,
+        min: 0,
+        max: 100,
+        symbol: "%",
+        customSectors: sectors,
+        pointer: false,
+        pointerOptions: {
+          toplength: -12,
+          bottomlength: 50,
+          bottomwidth: 8,
+          color: 'black',
+        },
+        gaugeWidthScale: 0.7,
+        title: "Phase 1 Training",
+        label: "LEVEL 3 COMPLETE"
+      });
+
+      var g = new JustGage({
+        id: "gaugeThreeAgain",
+        value: 81,
+        min: 0,
+        max: 100,
+        symbol: "%",
+        customSectors: sectors,
+        pointer: false,
+        pointerOptions: {
+          toplength: -12,
+          bottomlength: 50,
+          bottomwidth: 8,
+          color: 'black',
+        },
+        gaugeWidthScale: 0.7,
+        title: "Phase 2 Training",
+        label: "Currently in Level 3"
+      });
+
+     
+      var g = new JustGage({
+        id: "gaugeFourAgain",
+        value: 0,
+        min: 0,
+        max: 100,
+        symbol: "%",
+        customSectors: sectors,
+        pointer: false,
+        pointerOptions: {
+          toplength: -12,
+          bottomlength: 50,
+          bottomwidth: 8,
+          color: 'black',
+        },
+        gaugeWidthScale: 0.7,
+        title: "Phase 3 Training",
+        label: "LOCKED"
+      });
   
 
       self.phaseOne = function() {
