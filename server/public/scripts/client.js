@@ -75,29 +75,9 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
       templateUrl: '/views/templates/home.html',
       controller: 'LoginController as vm',
     })
-    .when('/login', {
-      templateUrl: '/views/templates/login.html',
-      controller: 'LoginController as vm',
-    })
-    .when('/register', {
-      templateUrl: '/views/templates/register.html',
-      controller: 'LoginController as vm'
-    })
-    .when('/student_Appointments', {
-      templateUrl: '/views/student_views/student_Appointments.html',
-      controller: 'StudentController as vm',
-    })
     .when('/general_info', {
       templateUrl: '/views/registration_views/general_info.html',
       controller: 'GeneralController as vm',
-    })
-    .when('/student_goals', {
-      templateUrl: '/views/registration_views/student_goals.html',
-      controller: 'SignupController as vm',
-    })
-    .when('/student_barriers', {
-      templateUrl: '/views/registration_views/student_barriers.html',
-      controller: 'SignupController as vm',
     })
     .when('/account_info', {
       templateUrl: '/views/registration_views/account_info.html',
@@ -127,8 +107,16 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
       templateUrl: '/views/student_views/phase_three.html',
       controller: 'GaugeController as vm',
     })
-    .when('/new', {
-      templateUrl: '/views/student_views/new.html',
+    .when('/assessments', {
+      templateUrl: '/views/student_views/assessments.html',
+      controller: 'GaugeController as vm',
+    })
+    .when('/movement', {
+      templateUrl: '/views/student_views/movement.html',
+      controller: 'GaugeController as vm',
+    })
+    .when('/nutrition', {
+      templateUrl: '/views/student_views/nutrition.html',
       controller: 'GaugeController as vm',
     })
     .otherwise({

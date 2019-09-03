@@ -820,3 +820,37 @@ li a {
   width: 75%;
   float: right;
 }
+
+#fluid_card_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#new_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#fluid_assessment_card {
+  height: 40%;
+  width: 40%;
+  float: left;
+}
+
+#new_thing {
+  height: 40%;
+  width: 40%;
+  float: right;
+}
+
+#nutrition_assessment_card {
+  display: block;
+  height: 40%;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}

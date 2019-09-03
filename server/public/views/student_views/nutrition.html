@@ -1,0 +1,98 @@
+<header class="ng-cloak" hide-gt-md ng-include="'/views/partials/user_header.html'"></header>
+
+<div class="ng-cloak" layout="column" layout-fill>
+
+    <section layout="row" flex>
+        <!-- Start md-sidenav -->
+        <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
+                <div class="starr-sidenav">
+                    <img ng-src="./images/fluid.png" />
+                    <p class="starr-sidenav-text">Fluid Health and Fitness</p>
+                    <h1 class="lead">Welcome Daniel!</h1>
+                </div>
+                <md-content layout-padding hide show-gt-md flex>
+                    <md-button class="md-raised md-primary selectedBtn" flex ng-click="vm.studentHome()">
+                        <i class="material-icons accessibility_new">accessibility_new</i>
+                        <span>My Dashboard</span>
+                    </md-button>
+                    <br />
+                    <md-button class="md-raised md-primary" flex ng-click="vm.assessments()">
+                        <i class="material-icons favorite">favorite</i>
+                        <span>Assessments</span>
+                    </md-button>
+                    <br />
+                    <md-button class="md-raised md-primary" flex ng-click="vm.movement()">
+                        <i class="material-icons fitness_center">fitness_center</i>
+                        <span>Movement</span>
+                    </md-button>
+                    <br />
+                    <md-button class="md-raised md-primary" flex ng-click="vm.nutrition()">
+                        <i class="material-icons restaurant">restaurant</i>
+                        <span>Nutrition</span>
+                    </md-button>
+                    <br />
+                    <md-button class="md-raised md-warn" flex ng-click="vm.userService.logout()">
+                        <i class="material-icons exit-app">exit_to_app</i>
+                        <span>Log Out</span>
+                    </md-button>
+                </md-content>
+                <md-content layout-padding hide-gt-md flex>
+                    <md-button class="md-raised md-primary selectedBtn" flex ng-click="vm.studentHome()">
+                        <i class="material-icons accessibility_new">accessibility_new</i>
+                        <span>My Dashboard</span>
+                    </md-button>
+                    <br />
+                    <md-button class="md-raised md-primary" flex ng-click="vm.assessments()">
+                        <i class="material-icons favorite">favorite</i>
+                        <span>Assessments</span>
+                    </md-button>
+                    <br />
+                    <md-button class="md-raised md-primary" flex ng-click="vm.nutrition()">
+                        <i class="material-icons fitness_center">fitness_center</i>
+                        <span>Movement</span>
+                    </md-button>
+                    <br />
+                    <md-button class="md-raised md-primary" flex ng-click="vm.movement()">
+                        <i class="material-icons restaurant">restaurant</i>
+                        <span>Nutrition</span>
+                    </md-button>
+                    <br />
+                    <md-button class="md-raised md-warn" flex ng-click="vm.userService.logout()">
+                        <i class="material-icons exit-app">exit_to_app</i>
+                        <span>Log Out</span>
+                    </md-button>
+                </md-content>
+            </md-sidenav>
+            <!-- End md-sidenav -->
+        <div class="overflow-1" flex layout-align="center center">
+            <!-- Start Profile Card -->
+            <md-content class="element-content content-element-text md-padding" layout-xs="column" layout="row">
+                <div flex class="profile-div" layout="column" layout-align="center center">
+                    <md-card class="card-element profile-card md-padding">
+                        <h2 class="home-title">Nutrition</h2>
+                    </md-card>
+                </div>
+            </md-content>
+            
+            
+            <md-content class="element-content content-element-text md-padding" layout-xs="column" layout="row">
+                    <div class="profile-div" layout="column" layout-align="center center"></div>
+                        <md-card id="nutrition_assessment_card">
+                          <img ng-src="./images/fluid.png" id="fluid_card_image" class="md-card-image" alt="Washed Out">
+                          <md-card-title>
+                            <md-card-title-text>
+                              <span class="md-headline">Restore Nutrition</span>
+                            </md-card-title-text>
+                          </md-card-title>
+                          <md-card-content>
+                                <p>Morbi viverra, ante vel aliquet tincid rhoncus sapien sit amet, tempus sapien.</p>
+                          </md-card-content>
+                          <md-card-actions layout="row" layout-align="end center">
+                            <md-button>View Current Assessment</md-button>
+                            <md-button>Begin New Assessment</md-button>
+                          </md-card-actions>
+                        </md-card>
+
+
+    </section>
+</div>

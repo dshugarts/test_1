@@ -182,5 +182,17 @@ myApp.controller('GaugeController', ['$location', 'UserService', function($locat
       self.studentHome = function() {
         $location.path('/dashboard');
       }
+
+      self.assessments = function() {
+        $location.path('/assessments');
+      }
+
+      self.nutrition = function() {
+        $location.path('/nutrition');
+      }
+
+      self.movement = function() {
+        $location.path('/movement');
+      }
   
   }]);
