@@ -63,9 +63,13 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
       templateUrl: '/views/registration_views/student_barriers.html',
       controller: 'SignupController as vm',
     })
-    .when('/additional_info', {
-      templateUrl: '/views/registration_views/additional_info.html',
-      controller: 'SignupController as vm',
+    .when('/account_info', {
+      templateUrl: '/views/registration_views/account_info.html',
+      controller: 'GeneralController as vm',
+    })
+    .when('/contact_info', {
+      templateUrl: '/views/registration_views/contact_info.html',
+      controller: 'GeneralController as vm',
     })
     .when('/student_home', {
       templateUrl: '/views/student_views/student_home.html',

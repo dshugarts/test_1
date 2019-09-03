@@ -33,7 +33,32 @@ myApp.controller('GeneralController', ['$http', 'UserService', 'SignupService', 
         $location.path('/home');
     }
 
+    self.general = function() {
+        $location.path('/general_info');
+    }
+
+    self.contact = function() {
+        $location.path('/contact_info');
+    }
+
     self.collectGeneral = function() {
+        $location.path('/contact_info');
+    }
+
+    self.collectContact = function() {
+        $location.path('/account_info');
+    }
+
+    self.collectAccount = function() {
+        Swal.fire({
+            title: 'Welcome to Fluid Health and Fitness!',
+            text: 'Account Successfully Created',
+            imageUrl: './images/fluid.png',
+            imageWidth: 78,
+            imageHeight: 102,
+            imageAlt: 'Custom image',
+            animation: false
+          })
         $location.path('/student_home');
     }
 
