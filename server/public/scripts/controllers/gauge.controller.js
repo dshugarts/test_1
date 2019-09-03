@@ -28,17 +28,18 @@ myApp.controller('GaugeController', ['$location', 'UserService', function($locat
       value: 62,
       min: 0,
       max: 100,
+      symbol: "%",
       customSectors: sectors,
-      pointer: true,
+      pointer: false,
       pointerOptions: {
         toplength: -12,
         bottomlength: 50,
         bottomwidth: 8,
         color: 'black',
       },
-      gaugeWidthScale: 0.5,
+      gaugeWidthScale: 0.7,
       title: "Fluid Wellness Score",
-      label: "Total Points Earned"
+      label: "Overall Progress"
     });
 
     var g = new JustGage({
@@ -46,15 +47,16 @@ myApp.controller('GaugeController', ['$location', 'UserService', function($locat
         value: 100,
         min: 0,
         max: 100,
+        symbol: "%",
         customSectors: sectors,
-        pointer: true,
+        pointer: false,
         pointerOptions: {
           toplength: -12,
           bottomlength: 50,
           bottomwidth: 8,
           color: 'black',
         },
-        gaugeWidthScale: 1.0,
+        gaugeWidthScale: 0.7,
         title: "Phase 1 Training",
         label: "LEVEL 3 COMPLETE"
       });
@@ -64,15 +66,16 @@ myApp.controller('GaugeController', ['$location', 'UserService', function($locat
         value: 81,
         min: 0,
         max: 100,
+        symbol: "%",
         customSectors: sectors,
-        pointer: true,
+        pointer: false,
         pointerOptions: {
           toplength: -12,
           bottomlength: 50,
           bottomwidth: 8,
           color: 'black',
         },
-        gaugeWidthScale: 0.5,
+        gaugeWidthScale: 0.7,
         title: "Phase 2 Training",
         label: "Currently in Level 3"
       });
@@ -83,15 +86,16 @@ myApp.controller('GaugeController', ['$location', 'UserService', function($locat
         value: 0,
         min: 0,
         max: 100,
+        symbol: "%",
         customSectors: sectors,
-        pointer: true,
+        pointer: false,
         pointerOptions: {
           toplength: -12,
           bottomlength: 50,
           bottomwidth: 8,
           color: 'black',
         },
-        gaugeWidthScale: 0.5,
+        gaugeWidthScale: 0.7,
         title: "Phase 3 Training",
         label: "LOCKED"
       });

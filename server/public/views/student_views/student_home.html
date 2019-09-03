@@ -71,76 +71,26 @@
                     <md-card class="card-element profile-card md-padding">
                         <h2 class="home-title">Fluid Dashboard</h2>
                     </md-card>
-                    <md-card class="card-element profile-card md-padding">
-                        <md-card-title>
-                            <md-card-title-text ng-repeat="student in vm.student.list">
+                </div>
+            </md-content>
+
+            <md-content class="element-content content-element-text md-padding" layout-md="column" layout="row">
+                    <div flex class="profile-div" layout-align="center center">
+                    <md-card class="card-element profile-card md-padding" ng-click="vm.roadMap()">
                                 <div class="ng-cloak">
-                                    <span class="md-headline">{{student.first_name}} {{student.last_name}}</span>
-                                    <span ng-repeat="student in vm.student.list" layout-xs="column">
-                                        <md-button class="md-raised md-primary defaultBtn" ng-hide="vm.editing" ng-click="vm.editBio()">Update Bio</md-button>
-                                        <md-button class="md-raised md-primary defaultBtn" ng-show="vm.editing" ng-click="vm.saveBio(student.student_id, vm.newBio)">Save Bio</md-button>
-                                        <md-button class="md-raised md-primary defaultBtn" ng-show="vm.editing" ng-click="vm.cancelBio()">Cancel Update</md-button>
-                                        <md-button class="md-raised md-primary defaultBtn" ng-click="vm.newPassword()">Change Password</md-button>
-                                    </span>
-                                </div>
-                            </md-card-title-text>
-                        </md-card-title>
-                        <div class="ng-cloak">
-                            <md-card-content ng-hide="vm.editing" class="bio-text groove groove-1 ng-cloak" ng-repeat="student in vm.student.list">
-                                <div ng-hide="vm.editing" name="bio">
-                                    {{student.student_bio}}
-                                </div>
-                            </md-card-content>
-                            <md-card-content ng-show="vm.editing" class="bio-text groove groove-1 ng-cloak" ng-repeat="student in vm.student.list">
-                                <md-input-container>
-                                    <textarea md-maxlength="150" rows="3" md-select-on-focus type="text" name="bio" ng-model="vm.newBio" placeholder="Enter a Bio"></textarea>
-                                </md-input-container>
-                            </md-card-content>
+                                    <div class="container">
+                                    <div id="gaugeOne" class="gauge size-1">
+                                    </div>
+                                    <div>
+                                    <h3>Fluid Health Score</h3>
+                                    <p>copy copy copy</p>
+                                    </div>
                         </div>
                     </md-card>
                 </div>
             </md-content>
             <!-- End Profile Card -->
-            <!-- Start Next Appointment Card -->
-            <md-content class="element-content content-element-text md-padding" layout-xs="column" layout="row" layout-align="center none">
-                <div flex class="profile-div" layout="column" layout-align="center center">
-                    <md-card class="card-element md-padding profile-card" layout="column" layout-align="center center">
-                        <h2 class="home-title">Your Next Appointment</h2>
-                    </md-card>
-                    <md-card class="card-element md-padding profile-card" layout="column" layout-align="center center">
-                        <md-card-content class="bio-text groove groove-1">
-                            <table class="table">
-                                <thead class="table-thead">
-                                    <tr class="table-tr">
-                                        <th class="table-th" scope="col">Date And Time</th>
-                                        <th class="table-th" scope="col">With Student</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="table-tr" ng-repeat="date in vm.appointment.list">
-                                        <td class="table-td" scope="row" data-label="Date and Time">{{date.date}} {{date.available_time}}</td>
-                                        <td class="table-td" scope="row" data-label="With Student">{{date.first_name}} {{date.last_name}}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <br/>
-                            <div>
-                                <md-button class="md-raised md-primary" flex ng-click="vm.studentSchedule()">
-                                    <i class="material-icons date-range">date_range</i>
-                                    <span>Make Appointment</span>
-                                </md-button>
-                            </div>
-                            <div>
-                                <md-button class="md-raised md-primary" flex ng-click="vm.myPastAppts()">
-                                    <i class="material-icons date-range">date_range</i>
-                                    <span>Past Appointments</span>
-                                </md-button>
-                            </div>
-                        </md-card-content>
-                    </md-card>
-                </div>
-            </md-content>
-            <!-- End Next Appointment Card -->
+            
         </div>
 
     </section>

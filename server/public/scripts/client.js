@@ -69,7 +69,7 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
     })
     .when('/student_home', {
       templateUrl: '/views/student_views/student_home.html',
-      controller: 'StudentController as vm',
+      controller: 'GaugeController as vm',
     })
     .when('/change_password', {
       templateUrl: '/views/student_views/change_password.html',
@@ -81,11 +81,11 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
     })
     .when('/phase_two', {
       templateUrl: '/views/student_views/phase_two.html',
-      controller: 'StudentController as vm',
+      controller: 'GaugeController as vm',
     })
     .when('/phase_three', {
       templateUrl: '/views/student_views/phase_three.html',
-      controller: 'StudentController as vm',
+      controller: 'GaugeController as vm',
     })
     .when('/new', {
       templateUrl: '/views/student_views/new.html',

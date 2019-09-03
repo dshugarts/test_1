@@ -767,7 +767,7 @@ li a {
 }
 
 .tabsdemoDynamicHeight md-content {
-  background-color: transparent !important; }
+  background-color: #f6f6f6 !important; }
   .tabsdemoDynamicHeight md-content md-tabs {
     background: #f6f6f6;
     border: 1px solid #e1e1e1; }
@@ -776,6 +776,10 @@ li a {
   .tabsdemoDynamicHeight md-content h1:first-child {
     margin-top: 0; }
 
+    md-tab {
+      background: #f6f6f6
+}
+
     .gauge {
       display: block;
       float: left;
@@ -783,11 +787,5 @@ li a {
       margin: 0 0 1% 0;
   }
   .size-1 {
-      width: 20%;
-  }
-  .size-2 {
-      width: 30%;
-  }
-  .size-3 {
-      width: 30%;
+      width: auto;
   }
