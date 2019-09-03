@@ -789,3 +789,11 @@ li a {
   .size-1 {
       width: auto;
   }
+
+#gold-star {
+    color: gold;
+  }
+
+#red-x {
+  color: red;
+}
