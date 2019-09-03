@@ -28,13 +28,17 @@ const myApp = angular.module('myApp', ['ngRoute', 'ngMaterial', 'ngAria', 'ngMes
   })
 
 
-  .controller('BasicDemoCtrl', function DemoCtrl($mdDialog) {
+  .controller('BasicDemoCtrl', function DemoCtrl($mdDialog, $location) {
     var originatorEv;
 
     this.openMenu = function($mdMenu, ev) {
       originatorEv = ev;
       $mdMenu.open(ev);
     };
+
+    this.logout = function() {
+      $location.path('home');
+    }
 
     this.notificationsEnabled = true;
     this.toggleNotifications = function() {

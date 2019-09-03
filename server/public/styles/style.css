@@ -854,3 +854,8 @@ li a {
   margin-left: auto;
   margin-right: auto;
 }
+
+#genCard {
+  width: 65%;
+  height: auto;
+}

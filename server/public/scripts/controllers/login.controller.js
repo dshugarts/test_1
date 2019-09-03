@@ -10,4 +10,8 @@ myApp.controller('LoginController', ['$http', '$location', 'SignupService', func
     $location.path('/general_info');
   }
 
+  self.dash = function() {
+    $location.path('/dashboard');
+  }
+
 }]); // end controller

@@ -195,4 +195,7 @@ myApp.controller('GaugeController', ['$location', 'UserService', function($locat
         $location.path('/movement');
       }
   
+      self.logout = function() {
+        $location.path('/home');
+      }
   }]);

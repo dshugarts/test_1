@@ -1,5 +1,5 @@
 <div class="ng-cloak" layout-fill layout="column" layout-align="center center">
-    <md-card class="card-element md-padding">
+    <md-card id="genCard" class="card-element md-padding">
         <br>
         <div layout-padding class="starr-landing">
             <img ng-src="./images/fluid.png" />
@@ -8,7 +8,7 @@
         <br>
         <div layout-align="center center">
             <md-input-container>
-                <md-button class="md-raised md-primary defaultBtn" ng-href="/#!login">Log In</md-button>
+                <md-button class="md-raised md-primary defaultBtn" ng-click="vm.dash()">Log In</md-button>
             </md-input-container>
             <md-input-container>
                 <md-button class="md-raised md-primary defaultBtn" ng-click="vm.signUp()">New Client</md-button>
