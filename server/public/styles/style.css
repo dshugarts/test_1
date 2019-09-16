@@ -807,6 +807,14 @@ li a {
   color: crimson;
 }
 
+#recovery-arrow-red{
+  color: crimson;
+}
+
+#recovery-arrow-green{
+  color: green;
+}
+
 #dash_phase_one {
   width: 75%;
   float: right;
@@ -863,4 +871,38 @@ li a {
 
 #new_dash_charthead {
   color: #1686B4;
+}
+
+#recovery-icons {
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+
+#recovery-icons-text {
+  margin-top: 0%;
+  padding-top: 5px;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+
+#recovery-icons-daily {
+  margin-top: 0%;
+  margin-left: 23px;
+  padding-top: 5px;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+
+#recovery-icons-monthly {
+  margin-top: 0%;
+  padding-top: 5px;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+#recovery-trend-arrow {
+  display: inline-block;
+  margin-top: 0%;
+  padding-top: 5px;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
 }
