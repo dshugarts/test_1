@@ -11,7 +11,17 @@ myApp.controller('LoginController', ['$http', '$location', 'SignupService', func
   }
 
   self.dash = function() {
-    $location.path('/dashboard');
-  }
+    Swal.fire({
+        title: 'Your Daily Stress Indicator is Red',
+        text: 'Today your session effort should be at Level 1',
+        imageUrl: './images/emptyfuel.png',
+        imageWidth: 102,
+        imageHeight: 102,
+        imageAlt: 'Custom image',
+        animation: true
+      })
+    $location.path('/new_dash');
+}
+
 
 }]); // end controller

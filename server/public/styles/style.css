@@ -23,7 +23,7 @@ main {
   overflow: scroll;
   content: "";
   background-color: transparent;
-  background: url(../images/landingPageBackground2.png) center center;
+  background: #FFF center center;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -59,6 +59,7 @@ main {
 header {
   background-color: #FFF;
   color: #1686B4;
+
 }
 
 .starr-sidenav {
@@ -858,4 +859,8 @@ li a {
 #genCard {
   width: 65%;
   height: auto;
+}
+
+#new_dash_charthead {
+  color: #1686B4;
 }
