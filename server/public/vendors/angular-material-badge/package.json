@@ -1,0 +1,57 @@
+{
+  "_from": "angular-material-badge",
+  "_id": "angular-material-badge@1.2.9",
+  "_inBundle": false,
+  "_integrity": "sha1-z2CmfR/vnxtICPIayM6kh5wI0IA=",
+  "_location": "/angular-material-badge",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "angular-material-badge",
+    "name": "angular-material-badge",
+    "escapedName": "angular-material-badge",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-material-badge/-/angular-material-badge-1.2.9.tgz",
+  "_shasum": "cf60a67d1fef9f1b4808f21ac8cea4879c08d080",
+  "_spec": "angular-material-badge",
+  "_where": "/Users/dshugarts/Prime/test_1",
+  "author": {
+    "name": "Juan Manuel",
+    "email": "jmouriz@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/jmouriz/angular-material-badge/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-animate": "^1.6.5",
+    "angular-aria": "^1.6.5",
+    "angular-material": "^1.1.4"
+  },
+  "deprecated": false,
+  "description": "Material Badge for AngularJS",
+  "devDependencies": {
+    "angular-marked": "^1.2.2",
+    "angular-material-icons": "^0.7.1",
+    "minify": "^3.0.1",
+    "prismjs": "^1.6.0"
+  },
+  "homepage": "https://github.com/jmouriz/angular-material-badge#readme",
+  "license": "MIT",
+  "main": "angular-material-badge.js",
+  "name": "angular-material-badge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmouriz/angular-material-badge.git"
+  },
+  "version": "1.2.9"
+}

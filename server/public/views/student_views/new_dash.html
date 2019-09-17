@@ -8,22 +8,21 @@
             <div class="starr-sidenav">
                 <img ng-src="./images/fluid.png" />
                 <p class="starr-sidenav-text">Fluid Health and Fitness</p>
-                <h1 class="lead">Welcome Daniel!</h1>
             </div>
             <md-content layout-padding hide show-gt-md flex>
                 <md-button id="nav-button" flex ng-click="vm.studentHome()">
                     <i class="material-icons accessibility_new">accessibility_new</i>
-                    <span>My Dashboard</span>
+                    <span>Movement</span>
                 </md-button>
                 <br />
                 <md-button id="nav-button" flex ng-click="vm.assessments()">
                     <i class="material-icons favorite">favorite</i>
-                    <span>Assessments</span>
+                    <span>Cardiovascular</span>
                 </md-button>
                 <br />
                 <md-button id="nav-button" flex ng-click="vm.movement()">
-                    <i class="material-icons fitness_center">fitness_center</i>
-                    <span>Movement</span>
+                    <i class="material-icons trending_up">trending_up</i>
+                    <span>Recovery</span>
                 </md-button>
                 <br />
                 <md-button id="nav-button" flex ng-click="vm.nutrition()">
@@ -31,25 +30,40 @@
                     <span>Nutrition</span>
                 </md-button>
                 <br />
+                <md-button id="nav-button" flex ng-click="vm.nutrition()">
+                    <i class="material-icons account_circle">account_circle</i>
+                    <span>Account</span>
+                </md-button>
+                <br />
+                <md-button id="nav-button" flex ng-click="vm.nutrition()">
+                    <i class="material-icons help">help</i>
+                    <span>Help</span>
+                </md-button>
+                <br />
                 <md-button id="nav-button" flex ng-click="vm.logout()">
                     <i class="material-icons exit-app">exit_to_app</i>
                     <span>Log Out</span>
+                </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.assessments()">
+                    <i class="material-icons favorite">favorite</i>
+                    <span>Assessments<ng-md-icon id="note" md-badge="12" icon="notifications"></ng-md-icon></span>
                 </md-button>
             </md-content>
             <md-content layout-padding hide-gt-md flex>
                 <md-button id="nav-button" md-ink-ripple=true flex ng-click="vm.studentHome()">
                     <i class="material-icons accessibility_new">accessibility_new</i>
-                    <span>My Dashboard</span>
+                    <span>Movement</span>
                 </md-button>
                 <br />
                 <md-button id="nav-button" flex ng-click="vm.assessments()">
                     <i class="material-icons favorite">favorite</i>
-                    <span>Assessments</span>
+                    <span>Cardiovascular</span>
                 </md-button>
                 <br />
                 <md-button id="nav-button" flex ng-click="vm.movement()">
-                    <i class="material-icons fitness_center">fitness_center</i>
-                    <span>Movement</span>
+                    <i class="material-icons trending_up">trending_up</i>
+                    <span>Recovery</span>
                 </md-button>
                 <br />
                 <md-button id="nav-button" flex ng-click="vm.nutrition()">
@@ -57,10 +71,28 @@
                     <span>Nutrition</span>
                 </md-button>
                 <br />
+                <md-button id="nav-button" flex ng-click="vm.nutrition()">
+                    <i class="material-icons account_circle">account_circle</i>
+                    <span>Account</span>
+                </md-button>
+                <br />
+                <md-button id="nav-button" flex ng-click="vm.nutrition()">
+                    <i class="material-icons help">help</i>
+                    <span>Help</span>
+                </md-button>
+                <br />
                 <md-button id="nav-button" flex ng-click="vm.logout()">
                     <i class="material-icons exit-app">exit_to_app</i>
                     <span>Log Out</span>
                 </md-button>
+                <br />
+                <md-button class="md-raised md-primary" flex ng-click="vm.assessments()">
+                    <i class="material-icons favorite">favorite</i>
+                    <span>Assessments</span>
+                </md-button>
+                </br>
+            </br>
+            <i class="material-icons favorite"><ng-md-icon id="note" md-badge="12" icon="notifications"></ng-md-icon>favorite</i>
             </md-content>
         </md-sidenav>
         <!-- End md-sidenav -->
@@ -105,7 +137,7 @@
                 <div flex class="profile-div" layout-align="center center">
                     <md-card class="card-element profile-card md-padding">
                     <h2 class="chartHead" id="new_dash_charthead">Phase 1 Training</h2>
-                    <canvas id="dash-bar" width="800" height="450"></canvas>
+                    <canvas id="dash-bar" width="400" height="225"></canvas>
                     </md-card>
                 </div>
             </md-content>
