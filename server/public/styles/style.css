@@ -906,3 +906,9 @@ li a {
   margin-bottom: 0%;
   padding-bottom: 0%;
 }
+
+#nav-button {
+  width: 100%;
+  text-align: left;
+  margin-left: 25px;
+}
